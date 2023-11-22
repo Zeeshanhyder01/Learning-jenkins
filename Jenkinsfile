@@ -81,6 +81,14 @@ pipeline{
     tools {
         maven 'maven'
     }
+    input {
+        message "Should we continue?"
+        ok "Yes, we should."
+        submitter "admin"
+        parameters {
+            string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
+        }
+    }
     stages{
         stage('Maven Version'){
             steps{
