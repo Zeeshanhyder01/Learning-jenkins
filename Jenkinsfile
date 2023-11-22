@@ -33,29 +33,31 @@
 //    }
 
 
-//pipeline {
-//    agent any
-//
-//    environment{
-//        SAMPLE_URL="GOOGLE.COM"
-//    }
-//
-//    stages {
-//        stage('One'){
-//            steps {
-//                sh 'echo URL=${SAMPLE_URL}'
-//                echo SAMPLE_URL
-//            }
-//        }
-//
-//    }
-//}
-//declarative doesnt allow to read dynamic varaibles at stage so go with scripted ppl
+pipeline {
+    agent any
 
-env.SAMPLE_URL="GOOGLE.COM"
-node{
-    stage("one - ${SAMPLE_URL}"){
-        echo SAMPLE_URL
+    environment{
+        SAMPLE_URL="GOOGLE.COM"
+        MY_CREDENTIALS = credentials('SSH')
+    }
+
+    stages {
+        stage('One'){
+            steps {
+                sh 'echo URL=${SAMPLE_URL}'
+                echo SAMPLE_URL
+                echo MY_CREDENTIALS
+            }
+        }
 
     }
 }
+//declarative doesnt allow to read dynamic varaibles at stage so go with scripted ppl
+//
+//env.SAMPLE_URL="GOOGLE.COM"
+//node{
+//    stage("one - ${SAMPLE_URL}"){
+//        echo SAMPLE_URL
+//
+//    }
+//}
