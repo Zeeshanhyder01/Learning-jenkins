@@ -19,7 +19,7 @@ pipeline {
         }
     post {
         cleanup {
-            echo" Hi This is demo of pjenkins post conditions"
+            echo" Hi This is demo of jenkins post conditions"
         }
     }
     }
