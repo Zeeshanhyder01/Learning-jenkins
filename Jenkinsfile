@@ -26,8 +26,8 @@ pipeline {
             echo" Hi This is demo of jenkins post  always conditions"
         }
 
-        regression {
-            echo" Hi This is demo of jenkins post regression conditions"
+        fixed {
+            echo" Hi This is demo of jenkins post fixed conditions"
         }
     }
     }
