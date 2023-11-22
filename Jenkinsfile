@@ -52,6 +52,8 @@
 //}
 env.SAMPLE_URL="GOOGLE.COM"
 node{
-    stage('one - ${SAMPLE_URL}')
-    echo SAMPLE_URL
+    stage("one - ${SAMPLE_URL}"){
+        echo SAMPLE_URL
+
+    }
 }
