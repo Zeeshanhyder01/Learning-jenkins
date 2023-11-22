@@ -21,5 +21,13 @@ pipeline {
         cleanup {
             echo" Hi This is demo of jenkins post conditions"
         }
+
+        always {
+            echo" Hi This is demo of jenkins post  always conditions"
+        }
+
+        fixed {
+            echo" Hi This is demo of jenkins post fixed conditions"
+        }
     }
     }
