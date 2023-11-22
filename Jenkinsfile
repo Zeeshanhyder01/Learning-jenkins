@@ -4,7 +4,7 @@ pipeline {
 
     stages {
 
-        stage('TEST01') {
+        stage('TEST 01) {
             steps {
                 echo'TEST01'
             }
@@ -26,8 +26,8 @@ pipeline {
             echo" Hi This is demo of jenkins post  always conditions"
         }
 
-        fixed {
-            echo" Hi This is demo of jenkins post fixed conditions"
+        regression {
+            echo" Hi This is demo of jenkins post regression conditions"
         }
     }
     }
