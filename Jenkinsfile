@@ -81,7 +81,6 @@ pipeline{
     tools {
         maven 'maven'
     }
-
     stages{
         input {
             message "Should we continue?"
