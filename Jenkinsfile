@@ -38,7 +38,7 @@ pipeline {
 
     environment{
         SAMPLE_URL="GOOGLE.COM"
-        MY_CREDENTIALS = credentials('SSH')
+        MY_CREDENTIALS = credentials('SSH CONNECTION')
     }
 
     stages {
