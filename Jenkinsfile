@@ -17,4 +17,9 @@ pipeline {
         }
 
         }
+    post {
+        cleanup {
+            echo" Hi This is demo of pjenkins post conditions"
+        }
+    }
     }
