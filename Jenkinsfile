@@ -76,20 +76,20 @@
 //    }
 //}
 
-//pipeline{
-//    agent any
-//    tools {
-//        maven 'maven'
-//    }
-//    stages{
-//        stage('Maven Version'){
-//            steps{
-//                sh 'mvn --version'
-//            }
-//
-//        }
-//    }
-//}
+pipeline{
+    agent any
+    tools {
+        maven 'maven'
+    }
+    stages{
+        stage('Maven Version'){
+            steps{
+                sh 'mvn --version'
+            }
+
+        }
+    }
+}
 
 //Inputs//
 //pipeline {
