@@ -66,6 +66,7 @@
 //    }
 //}
 
+
 //declarative doesnt allow to read dynamic varaibles at stage so go with scripted ppl
 //
 //env.SAMPLE_URL="GOOGLE.COM"
